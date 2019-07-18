@@ -2,19 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import ImageGrid from "./components/body/imageGrid";
+import styled from "styled-components";
+
+const WrapperDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    `
+
 
 function App() {
 
     return (
-        <div>
+        <WrapperDiv>
             <h1>NASA APOD</h1>
-            <h2>Beautiful Images of our world</h2>
+            <h2>Beautiful Images of our Universe</h2>
 
             <section>
-                <b>Build a card list here!</b>
+
                 <ImageGrid />
             </section>
-        </div>
+        </WrapperDiv>
     );
 }
 
